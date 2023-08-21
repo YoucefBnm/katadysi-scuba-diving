@@ -1,0 +1,50 @@
+.heading {
+    font-family: $font-heading;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    &--sup {
+        font-size: 1.6rem;
+        font-family: $font-body;
+        letter-spacing: 0.03em;
+        font-weight: lighter;
+    }
+    &--lg {
+        font-size: 6.2rem
+    }
+    &--md {
+        font-size: 3.2rem;
+    }
+    &--sm {
+        font-size: 2.2rem;
+    }
+    &--xs {
+        font-size: 1.5rem;
+    }
+}
+
+.nav-link {
+    font-size: 1.4rem;
+    font-weight: 400;
+    &:hover {
+        color: #fff;
+    }
+}
+
+a {
+    text-decoration: none;
+    font: inherit;
+    color: rgba($color: #fff, $alpha: .8);
+    transition: color .2s;
+
+}
+span {display: inline-block;}
+li {list-style: none;}
+button,
+input,
+textarea {
+    appearance: none;
+    border: none;
+    background: none;
+    outline: none;
+}

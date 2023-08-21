@@ -1,0 +1,79 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+    &--bg,
+    &--shadow {
+        padding: .8rem 2.5rem;
+        transition: all .2s;
+    }
+    &--bg {
+        color: #fff;
+        background-color: $color-primary;
+        transition: background-color .2s;
+        &:hover {
+            background-color: darken($color: $color-primary, $amount: 5);
+        }
+    }
+    &--shadow {
+        &--primary {
+            border: 1px solid $color-primary;
+            color: $color-primary;
+        }
+        &--light {
+            border: 1px solid rgba($color: #fff, $alpha: .5);
+            color: rgba($color: #fff, $alpha: .7);
+            &:hover {
+                color: rgba($color: #fff, $alpha: 1.0);
+                &::before{ transform: scaleX(1);}
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $color-primary;
+            transform: scaleX(0);
+            transition: transform .35s;
+            z-index: -1;
+            transform-origin: left;
+        }
+        
+    }
+    &--link {
+        font-weight: bold;
+        span {
+            transform: translateX(-2.2rem);
+            opacity: 0;
+            transition: all .25s ease;
+
+        }
+        &:hover span {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+
+}
+.swiper-pagination {
+    position: relative !important;
+    transform: none !important;
+    margin-top: 4rem !important;
+}
+.swiper-pagination-bullet {
+    width: 1rem !important;
+    height: 1rem !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: $color-primary !important;
+}
+
