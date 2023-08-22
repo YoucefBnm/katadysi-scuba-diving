@@ -10,11 +10,14 @@ const aboutCards = select('.about__cards')
 const blogCards = select('.blog__cards')
 
 const testimonialCards = select('.testimonials__cards')
+const teamContainer = select('.team__container')
+
 export {
     navbar,
     navToggleBtn,
     navLinks,
     aboutCards,
     blogCards,
-    testimonialCards
+    testimonialCards,
+    teamContainer,
 }

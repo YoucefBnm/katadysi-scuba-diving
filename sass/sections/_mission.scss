@@ -1,0 +1,21 @@
+.mission {
+
+    &__card {
+        max-width: 35rem;
+        min-width: 27rem;
+    }
+
+    &__container {
+        gap: 10rem;
+        @include respond(tab-port) {
+            gap: 4rem;
+        }
+    }
+    &__card-heading {
+        margin-top: 4rem;
+    }
+    &__card-heading,
+    &__card-paragraph {
+        padding: 0 2rem;
+    }
+}

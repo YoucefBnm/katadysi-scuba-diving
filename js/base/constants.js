@@ -251,3 +251,47 @@ export const testimonials = [
         rating: '4.5'
     }
 ]
+
+export const missionContent = [
+    {
+        id: 'mission-promote',
+        title: 'Promote eco-friendly diving',
+        paragraph: 'Learn about our mission to promote marine conservation, Eco-friendly diving practices, and responsible tourisme.'
+    },
+    {
+        id: 'mission-tales',
+        title: "Diver's tales",
+        paragraph: 'Read captivating stories of unforgettable dives, marine encounters, And adventures shared by divers from all around the globe.'
+    }
+]
+
+export const teamMembers = [
+    {
+        id: 'team-ceo',
+        image: '/assets/team-1.png',
+        name: 'Brad Kewell',
+        jobTitle: 'CEO',
+        bio: 'Beneath the surface, an intricate ecosystem thrives, seemingly detached from the hustle and bustle of our everyday lives.',
+    },
+    {
+        id: 'team-main_instructor',
+        image: '/assets/team-2.png',
+        name: 'Sienna Capri',
+        jobTitle: 'Main Instructor',
+        bio: 'Beneath the surface, an intricate ecosystem thrives, seemingly detached from the hustle and bustle of our everyday lives.',
+    },
+    {
+        id: 'team-instructor-3',
+        image: '/assets/team-3.png',
+        name: 'Chris Hunt',
+        jobTitle: 'Instructor',
+        bio: 'Beneath the surface, an intricate ecosystem thrives, seemingly detached from the hustle and bustle of our everyday lives.',
+    },
+    {
+        id: 'team-instructor-4',
+        image: '/assets/team-4.png',
+        name: 'Michael Cusso',
+        jobTitle: 'Instructor',
+        bio: 'Beneath the surface, an intricate ecosystem thrives, seemingly detached from the hustle and bustle of our everyday lives.',
+    }
+]

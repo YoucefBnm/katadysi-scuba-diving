@@ -1,0 +1,43 @@
+.team {
+
+    &__card {
+        border: 1px solid #EEEEEE;
+        box-shadow: 1px 1px 10px rgba(0,0,0, .05);
+        display: flex !important;
+        gap: 4rem;
+        padding: 4rem 3rem;
+
+        @include respond(tab-port) {
+            gap: 2rem;
+            padding: 3rem 1.2rem;
+        }
+    }
+
+    .swiper-navigation {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: relative !important;
+        margin-top: 2rem;
+        width: 4rem;
+        height: 4rem;
+        left: auto;
+        right: auto;
+        color: $color-accent;
+        opacity: .85;
+        &::after {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+    }
+    .swiper-button-next::after {
+        content: '\2192';
+    }
+    .swiper-button-prev::after {
+        content: '\2190';
+    }
+}

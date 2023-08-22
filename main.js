@@ -11,8 +11,9 @@ import { toggleNav } from './js/sections/nav'
 import './sass/main.scss'
 import { aboutMap } from './js/sections/about'
 import { postsMap } from './js/sections/blog'
-import { swiperBlog, swiperTestimonials } from './js/libs/swiper';
+import { swiperBlog, swiperTestimonials, teamSwiper } from './js/libs/swiper';
 import { testimonialsMap } from './js/sections/testimonials';
+import { teamMap } from './js/sections/team';
 
 navToggleBtn.addEventListener('click', toggleNav)
 
@@ -46,6 +47,22 @@ gsap.fromTo('.about',
         backgroundColor: '#DEEBE7',
     }
 )
+
+gsap.fromTo('.mission', 
+    {
+        scrollTrigger: {
+            trigger: '.mission',
+            backgroundColor: '#fff',
+            start: 'top top',
+            end: 'bottom bottom',
+            scrub: true
+        }
+    },
+    {
+        duration: 3,
+        backgroundColor: '#F1F1E6'
+    }
+)
 gsap.fromTo('.testimonials',
     {
         scrollTrigger: {
@@ -61,6 +78,7 @@ gsap.fromTo('.testimonials',
         backgroundColor: '#195D66',
     }
 )
+
 const lenis = new Lenis()
 
 function raf(time) {
@@ -73,5 +91,7 @@ requestAnimationFrame(raf)
 aboutMap()
 postsMap()
 testimonialsMap()
+teamMap()
 swiperBlog
 swiperTestimonials
+teamSwiper

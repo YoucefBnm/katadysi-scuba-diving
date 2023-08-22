@@ -54,3 +54,29 @@ export const swiperTestimonials = new Swiper('.swiperTestimonials', {
         }
       }
 })
+
+export const teamSwiper = new Swiper('.swiperTeam', {
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    spaceBetween: 40,
+    modules: [Navigation],
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      500: {
+        slidesPerView: 1,
+        slidesPerGroup: 1
+      },
+      750: {
+        slidesPerView: 1.5,
+        slidesPerGroup: 1
+      },
+      800: {
+        slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 20,
+      }
+    }
+  })
