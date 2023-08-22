@@ -11,7 +11,8 @@ import { toggleNav } from './js/sections/nav'
 import './sass/main.scss'
 import { aboutMap } from './js/sections/about'
 import { postsMap } from './js/sections/blog'
-import { swiperBlog } from './js/libs/swiper';
+import { swiperBlog, swiperTestimonials } from './js/libs/swiper';
+import { testimonialsMap } from './js/sections/testimonials';
 
 navToggleBtn.addEventListener('click', toggleNav)
 
@@ -45,6 +46,21 @@ gsap.fromTo('.about',
         backgroundColor: '#DEEBE7',
     }
 )
+gsap.fromTo('.testimonials',
+    {
+        scrollTrigger: {
+            trigger: '.about',
+            backgroundColor: '#1A1A1A',
+            start: 'top top',
+            end: 'bottom bottom',
+            scrub: true
+        },
+    },
+    {
+        duration: 5,
+        backgroundColor: '#195D66',
+    }
+)
 const lenis = new Lenis()
 
 function raf(time) {
@@ -56,4 +72,6 @@ requestAnimationFrame(raf)
 
 aboutMap()
 postsMap()
+testimonialsMap()
 swiperBlog
+swiperTestimonials

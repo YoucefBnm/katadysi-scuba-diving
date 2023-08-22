@@ -9,10 +9,12 @@ const aboutCards = select('.about__cards')
 
 const blogCards = select('.blog__cards')
 
+const testimonialCards = select('.testimonials__cards')
 export {
     navbar,
     navToggleBtn,
     navLinks,
     aboutCards,
-    blogCards
+    blogCards,
+    testimonialCards
 }

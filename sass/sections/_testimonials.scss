@@ -1,0 +1,42 @@
+.testimonials {
+    &__card {
+        box-shadow: 1px 3px 5px -2px rgba($color: #000000, $alpha: .25);
+        border: 1px solid #114349;
+        padding: 3rem 5rem;
+        gap: 4rem;
+        border-radius: 1rem;
+        @include respond(tab-land) {
+            padding: 2rem 2.5rem;
+        }
+    }
+
+    &__card-paragraph {
+        blockquote {
+            position: relative;
+
+            &::before,
+            &::after {
+                content: url('/assets/quotes.svg');
+                position: absolute;
+            }
+
+            &::before {
+                top: -2rem;
+                left: -3.5rem;
+                @include respond(tab-land) {
+                    top: -1rem;
+                    left: -2rem;
+                    z-index: -1;
+                }
+                @include respond(tab-port) {
+                    left: -1rem;
+                    top: -.5rem;
+                }
+            }
+            &::after {
+                right: -1rem;
+                bottom: 0;
+            }
+        }
+    }
+}

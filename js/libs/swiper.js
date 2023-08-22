@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import { Mousewheel, Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 
 export const swiperBlog = new Swiper('.swiperBlog', {
     modules: [Navigation],
@@ -30,6 +30,27 @@ export const swiperBlog = new Swiper('.swiperBlog', {
             slidesPerView: 1,
             slidesPerGroup: 1
         }
-
     }
+})
+
+export const swiperTestimonials = new Swiper('.swiperTestimonials', {
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    spaceBetween: 40,
+    modules: [Pagination],
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    breakpoints: {
+        750: {
+          slidesPerView: 2,
+          slidesPerGroup: 2
+        },
+        350: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          slidesPerGroup: 1
+        }
+      }
 })

@@ -200,3 +200,54 @@ export const blogArticles = [
         ]
     }
 ]
+
+export const testimonials = [
+    {
+        id: 'testimonial-1',
+        text: "An unforgettable adventure awaits anyone who dives with KATADYSI. I've been diving for years, but their dive trips always manage to surprise me. The meticulously planned dive destinations, the camaraderie among fellow divers, and the sheer dedication of the staff make each trip an absolute delight. Whether you're a novice or an experienced diver, you'll find a warm and welcoming community here.",
+        image: '/assets/testimonial-1.png',
+        name: 'Stephan Costa',
+        state: 'Nashville - Tennessee',
+        rating: 4.8,
+    },
+    {
+        id: 'testimonial-2',
+        text: 'I had the most incredible experience with Katadysi. From the moment I arrived, the team made me feel like family. The dive instructors were patient and knowledgeable, guiding me through my first open water dives. The underwater world I encountered was beyond my imagination – colorful coral reefs, playful fish, and even a graceful sea turtle! Thank you for creating memories that will stay with me forever..',
+        image: '/assets/testimonial-2.png',
+        name: 'Helena Donovan',
+        state: 'Denver - Colorado',
+        rating: '4.8'
+    },
+    {
+        id: 'testimonial-3',
+        text: 'As a marine biology student, I had the privilege of joining a coral reef conservation workshop organized by KATADYSI. Not only did I gain valuable hands-on experience in coral restoration techniques, but I also witnessed the commitment of the team towards marine conservation. This experience reaffirmed my passion for marine life, and I am grateful for the opportunity to contribute to such an important cause.',
+        image: '/assets/testimonial-3.png',
+        name: 'Sarah',
+        state: 'Newark - New Jersey',
+        rating: '4.8'
+    },
+    {
+        id: 'testimonial-4',
+        text: "I've always been fascinated by shipwrecks, and my dream came true with KATADYSI. The Shipwreck Exploration Weekend was a remarkable blend of adventure and history. The guides' knowledge and passion for maritime history were infectious, and the dives to the wrecks were a surreal experience. I'm grateful for the insights gained and the memories made during this unique and well-organized event.",
+        image: '/assets/testimonial-4.png',
+        name: 'Alex McGill',
+        state: 'Boston - Massachusetts',
+        rating: '4.7'
+    },
+    {
+        id: 'testimonial-1',
+        text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis.',
+        image: '/assets/testimonial-1.png',
+        name: 'Stephan Costa',
+        state: 'Nashville - Tennessee',
+        rating: '4.5'
+    },
+    {
+        id: 'testimonial-2',
+        text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis.',
+        image: '/assets/testimonial-2.png',
+        name: 'Helena Donovan',
+        state: 'Denver - Colorado',
+        rating: '4.5'
+    }
+]
