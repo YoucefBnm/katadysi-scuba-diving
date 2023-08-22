@@ -47,17 +47,55 @@
           <img src="assets/hero-image.jpg" alt="scuba diving" />
         </div>
 
-        <div class="hero__text flex flex--col justify--center align--center text--center gap--2 gsap-reveal gsap-reveal--top">
-          <h1 class="heading heading--lg">Discover the heart behind</h1>
-          <p>Join us as we embark on an unforgettable adventure beneath the waves.</p>
-          <div class="hero__btn">
+        <div class="hero__text flex flex--col justify--center align--center text--center gap--2">
+          <h1 class="hero-text-anim heading heading--lg">Discover the heart behind</h1>
+          <p class="hero-text-anim">Join us as we embark on an unforgettable adventure beneath the waves.</p>
+          <div class="hero-text-anim hero__btn">
             <a href="#" class="btn btn--shadow btn--shadow--light">Contact us</a>
-            
           </div>
         </div>
       </div>
     </header>
 
+    <main>
+      <!-- section about start -->
+      <section class="about pad--y-default pad--x-default">
+
+        <div class="about__container">
+
+          <div class="about__images">
+            <div class="about__img">
+              <picture>
+                <source media="(max-width: 1110px)" srcset="/assets/intro-img-md-1110.jpg">
+                <img src="/assets/intro-img-md.jpg">
+              </picture>
+            </div>
+  
+            <div class="about__img">
+              <picture>
+                <source media="(max-width: 1110px)" srcset="/assets/intro-img-sm-1110.jpg">
+                <source media="(max-width: 1070)" srcset="/assets/intro-img-sm.jpg">
+                <img src="/assets/intro-img-sm.jpg">
+              </picture>
+            </div>
+          </div>
+          <div class="about__cards"></div>
+        </div>
+      </section>
+
+      <!-- section blog start -->
+      <section class="blog pad--x-default pad--y-default overflow--hidden">
+        <div class="blog__container flex align--center justify--between gsap-reveal gsap-reveal--top">
+          <div class="blog__intro">
+            <h4 class="heading heading--sup color--primary mar--b-1">Dive into our blog</h4>
+            <h2 class="heading heading--md mar--b-2">Read captivating stories tips and insights</h2>
+            <p>Dive into our blog to read captivating stories, tips, and insights from fellow divers, experts, and travelers in the diving community.</p>
+          </div>
+        </div>
+
+        <div class="blog__cards"></div>
+      </section>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

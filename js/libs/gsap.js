@@ -1,4 +1,8 @@
 import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/all"
+
+gsap.registerPlugin(ScrollTrigger)
+
 
 export const animateElement = (element, direction) => {
     direction = direction || 1
@@ -34,4 +38,26 @@ export const animateElement = (element, direction) => {
 export const hide = element => {
     gsap.set(element, { autoAlpha: 0 })
 }
+
+
+
+const heroText = gsap.utils.toArray('.hero-text-anim')
+
+export const animateHeroText = heroText.forEach((text, index) => {
+    gsap.fromTo(text,
+        {
+            scaleY: 0,
+            opacity: 0,
+            y: -50,
+            transformOrigin: 'top'
+        },
+        {
+            scaleY: 1,
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            stagger: .02,
+        }    
+    )
+})
 

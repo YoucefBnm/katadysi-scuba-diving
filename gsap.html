@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katadysi scuba diving</title>
+
+    <style>
+      section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+      section:nth-of-type(2) {
+        background-color: #ffff00;
+      }
+      section:nth-of-type(3) {
+        background-color: rgb(29,29,29);
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav flex pad--x-default pad--y-2 align--center justify--between">
+        <div class="nav__logo">
+          <a href="/">
+            <img src="/assets/logo.svg" alt="Katadysi logo" />
+          </a>
+        </div>
+
+        <ul class="nav__navigation flex align-center gap--2">
+          <li class="nav__item">
+            <a href="#intro" class="nav-link" id="nav-anchor">Discover</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav-link" id="nav-anchor">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#events" class="nav-link" id="nav-anchor">Events</a>
+          </li>
+          <li class="nav__item">
+            <a href="#blog" class="nav-link" id="nav-anchor">Blog</a>
+          </li>
+          <li class="nav__item">
+            <a href="#testimonials" class="nav-link" id="nav-anchor">Testimonials</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#team" class="nav-link">Our Team</a>
+          </li>
+        </ul>
+
+        <div class="nav__toggle">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+
+      <div class="hero color--white">
+        <div class="hero__bg">
+          <img src="assets/hero-image.jpg" alt="scuba diving" />
+        </div>
+
+        <div class="hero__text flex flex--col justify--center align--center text--center gap--2 gsap-reveal gsap-reveal--top">
+          <h1 class="heading heading--lg">Discover the heart behind</h1>
+          <p>Join us as we embark on an unforgettable adventure beneath the waves.</p>
+          <div class="hero__btn">
+            <a href="#" class="btn btn--shadow btn--shadow--light">Contact us</a>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h1 class="heading heading--lg reveal-type" data-bg-color="#cccccc" data-fg-color="teal">scroll down for more awesomeness</h1>
+    </section>
+
+    <section>
+      <p class="reveal-type" data-bg-color="#b6b600" data-fg-color="#000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti quam eum architecto natus porro odit eius tempora velit enim, aspernatur blanditiis, cum ipsum accusamus!</p>
+    </section>
+
+    <section>
+      <p class="reveal-type" data-bg-color="#353535" data-fg-color="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro saepe nulla, ea dicta debitis quia vitae dolor placeat, deleniti qui ipsam, expedita eum nihil asperiores. Veniam ipsum sed illo? Dignissimos quod at voluptatibus, excepturi placeat consequatur dicta eligendi labore culpa soluta ipsa atque.</p>
+    </section>
+
+    <section></section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
+    <script type="module" src="/main.js"></script>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger)
+
+      const splitTypes = document.querySelectorAll('.reveal-type')
+      
+      splitTypes.forEach((char, i) => {
+        const text = new SplitType(char, { types: 'chars'})
+        const bg = char.dataset.bgColor
+        const fg = char.dataset.fgColor
+        
+        gsap.fromTo(text.chars, 
+          {
+            scaleY: 0,
+            y: -20,
+            transformOrigin: 'top',
+          },
+          {
+            scaleY: 1,
+            y: 0,
+            duration: 0.3,
+            stagger: 0.02,
+            scrollTrigger: {
+              trigger: char,
+              start: 'top 80%',
+              end: 'top 20%',
+              scrub: false,
+              markers: false ,
+              toggleActions: 'play play reverse reverse'
+            }
+          }
+        )
+      })
+
+      const lenis = new Lenis()
+      lenis.on('scroll', e => {
+        // console.log(e)
+      })
+
+      function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+      }
+      requestAnimationFrame(raf)
+    </script>
+  </body>
+</html>
