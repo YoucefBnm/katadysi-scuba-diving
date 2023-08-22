@@ -45,16 +45,19 @@
         
     }
     &--link {
-        font-weight: bold;
+        font-size: 1.4rem;
         span {
             transform: translateX(-2.2rem);
             opacity: 0;
             transition: all .25s ease;
-
+            color: currentColor;
         }
         &:hover span {
             transform: translateX(0);
             opacity: 1;
+        }
+        &--accent {
+            color: $color-accent;
         }
     }
 }

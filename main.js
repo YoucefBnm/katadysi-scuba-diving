@@ -1,13 +1,17 @@
 import { gsap } from 'gsap'
 import Lenis from '@studio-freight/lenis'
-
 import { ScrollTrigger } from 'gsap/all'
+import 'swiper/css'
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 import { animateElement, hide } from './js/libs/gsap'
 import { navToggleBtn } from './js/base/ui'
 import { toggleNav } from './js/sections/nav'
 import './sass/main.scss'
 import { aboutMap } from './js/sections/about'
 import { postsMap } from './js/sections/blog'
+import { swiperBlog } from './js/libs/swiper';
 
 navToggleBtn.addEventListener('click', toggleNav)
 
@@ -52,3 +56,4 @@ requestAnimationFrame(raf)
 
 aboutMap()
 postsMap()
+swiperBlog

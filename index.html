@@ -84,16 +84,23 @@
       </section>
 
       <!-- section blog start -->
-      <section class="blog pad--x-default pad--y-default overflow--hidden">
-        <div class="blog__container flex align--center justify--between gsap-reveal gsap-reveal--top">
-          <div class="blog__intro">
-            <h4 class="heading heading--sup color--primary mar--b-1">Dive into our blog</h4>
+      <section id="blog" class="blog pad--x-default pad--y-default overflow--hidden">
+        <div class="blog__container flex align--center">
+          <div class="blog__intro gsap-reveal gsap-reveal--top">
+            <h4 class="heading heading--sup color--accent mar--b-1">Dive into our blog</h4>
             <h2 class="heading heading--md mar--b-2">Read captivating stories tips and insights</h2>
             <p>Dive into our blog to read captivating stories, tips, and insights from fellow divers, experts, and travelers in the diving community.</p>
+
+            <div class="blog__navigation">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+
+          <div class="swiperBlog">
+            <div class="swiper-wrapper blog__cards"></div>
           </div>
         </div>
-
-        <div class="blog__cards"></div>
       </section>
     </main>
     <script type="module" src="/main.js"></script>
