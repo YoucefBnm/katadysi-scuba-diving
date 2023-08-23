@@ -27,7 +27,9 @@
 
 .nav-link {
     font-size: 1.4rem;
-    
+    color: rgba($color: #fff, $alpha: .75);
+    transition: color .2s;
+
     &:hover {
         color: #fff;
     }
@@ -36,8 +38,6 @@
 a {
     text-decoration: none;
     font: inherit;
-    color: rgba($color: #fff, $alpha: .8);
-    transition: color .2s;
 
 }
 span {display: inline-block;}

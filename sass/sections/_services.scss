@@ -1,0 +1,38 @@
+.services {
+
+    &__images {
+        position: relative;
+        flex-direction: column;
+        z-index: -1;
+    }
+    &__img {
+        
+        img,
+        source {
+            
+        }
+        
+        &:last-child {
+            translate: -5rem -2rem;
+        }
+    }
+    &__container {
+        @include respond(tab-port) {
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+        }
+    }
+    &__cards {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    &__card {
+        width: clamp(28rem, 30rem, 32rem);
+        
+    }
+    &__card-icon {
+
+    }
+}

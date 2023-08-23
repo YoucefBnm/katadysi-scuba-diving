@@ -5,7 +5,7 @@ import 'swiper/css'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import { animateElement, hide } from './js/libs/gsap'
+import { animateElement, animateNavOnScroll, hide } from './js/libs/gsap'
 import { navToggleBtn } from './js/base/ui'
 import { toggleNav } from './js/sections/nav'
 import './sass/main.scss'
@@ -14,6 +14,7 @@ import { postsMap } from './js/sections/blog'
 import { swiperBlog, swiperTestimonials, teamSwiper } from './js/libs/swiper';
 import { testimonialsMap } from './js/sections/testimonials';
 import { teamMap } from './js/sections/team';
+import { servicesMap } from './js/sections/services';
 
 navToggleBtn.addEventListener('click', toggleNav)
 
@@ -88,7 +89,9 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
+animateNavOnScroll
 aboutMap()
+servicesMap()
 postsMap()
 testimonialsMap()
 teamMap()

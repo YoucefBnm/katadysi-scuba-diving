@@ -3,6 +3,14 @@ import { ScrollTrigger } from "gsap/all"
 
 gsap.registerPlugin(ScrollTrigger)
 
+export const animateNavOnScroll = ScrollTrigger.create({
+    start: 'top - 80',
+    end: 99999,
+    toggleClass: {
+        className: 'nav-scroll',
+        targets: 'nav'
+    }
+})
 
 export const animateElement = (element, direction) => {
     direction = direction || 1

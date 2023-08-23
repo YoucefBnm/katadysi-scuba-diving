@@ -23,6 +23,11 @@ header {
     }
 
     &__text {
+        .heading {
+            @include respond(phone) {
+                font-size: 5rem;
+            }
+        }
         p {
             font-size: 1.7rem;
             max-width: 42ch;

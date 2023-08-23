@@ -252,6 +252,27 @@ export const testimonials = [
     }
 ]
 
+export const services = [
+    {
+        id: 'services-class',
+        icon: '/assets/services-class.svg',
+        title: 'Diving courses',
+        paragraph: "Dive into learning with our comprehensive range of dive courses. Whether you're a beginner seeking to earn your Open Water Diver certification or an experienced diver looking to advance your skills, we have the perfect course for you. Join us for a journey of discovery and self-improvement in the underwater realm.",
+    },
+    {
+        id: 'services-equipment',
+        icon: '/assets/services-equipment.svg',
+        title: 'Diving equipment',
+        paragraph: "Browse our handpicked selection of top-quality scuba diving equipment and gear. From masks and fins to regulators and dive computers, we only offer products we trust and use ourselves. Dive confidently with gear that enhances your safety and comfort underwater.",
+    },
+    {
+        id: 'services-destinations',
+        icon: '/assets/services-compass.svg',
+        title: 'Diving destinations',
+        paragraph: "Explore the world's most stunning dive destinations with us. From tropical coral reefs teeming with colorful marine life to haunting shipwrecks full of history, our carefully curated list of destinations promises unforgettable underwater experiences.",
+    }
+]
+
 export const missionContent = [
     {
         id: 'mission-promote',

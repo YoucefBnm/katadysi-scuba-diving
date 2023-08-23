@@ -47,7 +47,7 @@ export const swiperTestimonials = new Swiper('.swiperTestimonials', {
           slidesPerView: 2,
           slidesPerGroup: 2
         },
-        350: {
+        300: {
           slidesPerView: 1,
           spaceBetween: 20,
           slidesPerGroup: 1
@@ -75,8 +75,13 @@ export const teamSwiper = new Swiper('.swiperTeam', {
       },
       800: {
         slidesPerView: 2,
-      slidesPerGroup: 2,
-      spaceBetween: 20,
-      }
+        slidesPerGroup: 2,
+        spaceBetween: 20,
+      },
+      300: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 20,
+      },
     }
   })

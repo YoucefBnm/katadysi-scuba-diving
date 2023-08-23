@@ -7,6 +7,8 @@ const navLinks = select('.nav__navigation')
 
 const aboutCards = select('.about__cards')
 
+const servicesCards = select('.services__cards')
+
 const blogCards = select('.blog__cards')
 
 const testimonialCards = select('.testimonials__cards')
@@ -20,4 +22,5 @@ export {
     blogCards,
     testimonialCards,
     teamContainer,
+    servicesCards
 }

@@ -3,3 +3,9 @@
     visibility: hidden;
     will-change: transform, opacity;
 }
+
+.nav-scroll {
+    background-color: $color-primary;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
