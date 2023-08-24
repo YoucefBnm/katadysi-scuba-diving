@@ -11,6 +11,22 @@ export const animateNavOnScroll = ScrollTrigger.create({
         targets: 'nav'
     }
 })
+export const animateSectionBg = (target, bg) => {
+    return gsap.fromTo(target,
+        {
+            scrollTrigger: {
+                trigger: target,
+                backgroundColor: '#fff',
+                start: 'top top',
+                end: 'bottom bottom'
+            }
+        },
+        {
+            duration: 3,
+            backgroundColor: bg
+        }
+    )
+}
 
 export const animateElement = (element, direction) => {
     direction = direction || 1

@@ -49,8 +49,8 @@
 
         <div class="hero__text flex flex--col justify--center align--center text--center gap--2">
           <h1 class="hero-text-anim heading heading--lg">Discover the heart behind</h1>
-          <p class="hero-text-anim">Join us as we embark on an unforgettable adventure beneath the waves.</p>
-          <div class="hero-text-anim hero__btn">
+          <p class="">Join us as we embark on an unforgettable adventure beneath the waves.</p>
+          <div class=" hero__btn">
             <a href="#" class="btn btn--shadow btn--shadow--light">Contact us</a>
           </div>
         </div>
@@ -87,9 +87,9 @@
       <section id="services" class="services pad--x-default pad--y-default">
         <div class="services__container flex justify--between">
           
-          <div class="services__cards"></div>
+          <div class="services__cards gsap-reveal gsap-reveal--left"></div>
 
-          <div class="services__images flex">
+          <div class="services__images flex gsap-reveal gsap-reveal--right">
             <picture class="services__img">
               <source media="(max-width: 1110px)" srcset="/assets/services-image-lg.jpg">
               <source media="(max-width: 1070)" srcset="/assets/services-image-lg.jpg">
@@ -186,11 +186,9 @@
         </div>
       </section>
 
-      
-
       <!-- team section start -->
-      <section id="team" class="team pad--x-default pad--y-default">
-        <div class="team__headings text--center mar--b-4">
+      <section id="team" class="team pad--x-default pad--y-default overflow--hidden">
+        <div class="team__headings text--center mar--b-4 gsap-reveal gsap-reveal--top">
           <h4 class="heading heading--sup color--primary mar--b-1">Meet Katadysi's finest</h4>
           <h1 class="heading heading--md">Meet our team</h1>
         </div>

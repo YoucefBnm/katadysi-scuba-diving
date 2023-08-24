@@ -15,7 +15,7 @@ export const swiperBlog = new Swiper('.swiperBlog', {
         },
         900: {
             slidesPerView: 1.5,
-            slidesPerGroup: 1.5
+            slidesPerGroup: 1
         },
 
         600: {

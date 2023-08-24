@@ -5,7 +5,12 @@ import 'swiper/css'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import { animateElement, animateNavOnScroll, hide } from './js/libs/gsap'
+import { 
+    animateElement, 
+    animateNavOnScroll, 
+    animateSectionBg, 
+    // hide 
+} from './js/libs/gsap'
 import { navToggleBtn } from './js/base/ui'
 import { toggleNav } from './js/sections/nav'
 import './sass/main.scss'
@@ -22,63 +27,50 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger)
 
     gsap.utils.toArray('.gsap-reveal').forEach(element => {
-        hide(element)
+        // hide(element)
 
         ScrollTrigger.create({
             trigger: element,
             onEnter: () => { animateElement(element)},
+            scrub: false,
             onEnterBack: () => { animateElement(element, -1)},
-            onLeave: () => { hide(element) }
+            // onLeave: () => { hide(element) },
         })
     })
 })
 
-gsap.fromTo('.about', 
+gsap.fromTo('.hero__text',
     {
-        scrollTrigger: {
-            trigger: '.about',
-            backgroundColor: '#fff',
-            start: 'top top',
-            end: 'bottom bottom',
-            scrub: true
-        },
+        scaleY: 0,
     },
     {
-        duration: 5,
-        backgroundColor: '#DEEBE7',
-    }
+        scaleY: 1,
+        duration: 1,
+        delay: .5
+    },
 )
 
-gsap.fromTo('.mission', 
+gsap.fromTo('.about__images',
     {
         scrollTrigger: {
-            trigger: '.mission',
-            backgroundColor: '#fff',
+            trigger: '.about__images',
+            opacity: 0.2,
             start: 'top top',
             end: 'bottom bottom',
-            scrub: true
+            scrub: true,
         }
     },
     {
-        duration: 3,
-        backgroundColor: '#F1F1E6'
+        duration: 1,
+        delay: .5,
+        opacity: 1
+        
     }
 )
-gsap.fromTo('.testimonials',
-    {
-        scrollTrigger: {
-            trigger: '.about',
-            backgroundColor: '#1A1A1A',
-            start: 'top top',
-            end: 'bottom bottom',
-            scrub: true
-        },
-    },
-    {
-        duration: 5,
-        backgroundColor: '#195D66',
-    }
-)
+animateSectionBg('.about', '#DEEBE7')
+animateSectionBg('.mission', '#F1F1E6')
+animateSectionBg('.testimonials', '#195D66')
+
 
 const lenis = new Lenis()
 

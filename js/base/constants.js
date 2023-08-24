@@ -1,25 +1,25 @@
 export const aboutContent = [
     {
         id: 'intro-section-glob',
-        icon: '/assets/earth-airplane.svg',
+        icon: '../../assets/earth-airplane.svg',
         title: 'Unfogettable dives around the globe',
         paragraph: 'Read captivating stories of unforgettable dives, marine encounters, and adventures shared by divers from all around the globe.'
     },
     {
         id: 'intro-section-tips',
-        icon: '/assets/information.svg',
+        icon: '../../assets/information.svg',
         title: 'Useful tips, trick',
         paragraph: 'Find useful tips, tricks, and safety guidelines to improve your diving skills and make the most out of your underwater experience.'
     },
     {
         id: 'intro-section-location',
-        icon: '/assets/location.svg',
+        icon: '../../assets/location.svg',
         title: 'Stunning dive destinations',
         paragraph: 'From tropical coral reefs teeming with colorful marine life to haunting shipwrecks full of history, our carefully curated list of destinations promises unforgettable underwater experiences.'
     },
     {
         id: 'intro-section-eco',
-        icon: '/assets/eco.svg',
+        icon: '../../assets/eco.svg',
         title: 'Eco-friendly diving practices',
         paragraph: 'our mission to promote marine conservation, eco-friendly diving practices, and responsible tourism.'
     }
@@ -28,7 +28,7 @@ export const aboutContent = [
 export const blogArticles = [
     {
         id: 'blog-article-explore',
-        image: '/assets/blog-post-1.jpg',
+        image: '../../assets/blog-post-1.jpg',
         title: 'Title: Exploring the Depths: A Journey into the World of Scuba Diving',
         article: [
             {
@@ -72,7 +72,7 @@ export const blogArticles = [
     },
     {
         id: 'blog-article-photograhy',
-        image: '/assets/blog-post-2.jpg',
+        image: '../../assets/blog-post-2.jpg',
         title: 'Beneath the Waves: Unveiling the Magic of Scuba Diving Photography',
         article: [
             {
@@ -115,7 +115,7 @@ export const blogArticles = [
     },
     {
         id: 'blog-article-adventure',
-        image: '/assets/blog-post-3.jpg',
+        image: '../../assets/blog-post-3.jpg',
         title: "Title: Dive Into Adventure: The Allure of Night Scuba Diving",
         article: [
             {
@@ -158,7 +158,7 @@ export const blogArticles = [
     },
     {
         id: 'blog-article-symphony',
-        image: '/assets/blog-post-4.jpg',
+        image: '../../assets/blog-post-4.jpg',
         title: 'Silent Symphony: The Art of Underwater Meditation Through Freediving',
         article: [
             {
@@ -205,7 +205,7 @@ export const testimonials = [
     {
         id: 'testimonial-1',
         text: "An unforgettable adventure awaits anyone who dives with KATADYSI. I've been diving for years, but their dive trips always manage to surprise me. The meticulously planned dive destinations, the camaraderie among fellow divers, and the sheer dedication of the staff make each trip an absolute delight. Whether you're a novice or an experienced diver, you'll find a warm and welcoming community here.",
-        image: '/assets/testimonial-1.png',
+        image: '../../assets/testimonial-1.png',
         name: 'Stephan Costa',
         state: 'Nashville - Tennessee',
         rating: 4.8,
@@ -213,7 +213,7 @@ export const testimonials = [
     {
         id: 'testimonial-2',
         text: 'I had the most incredible experience with Katadysi. From the moment I arrived, the team made me feel like family. The dive instructors were patient and knowledgeable, guiding me through my first open water dives. The underwater world I encountered was beyond my imagination – colorful coral reefs, playful fish, and even a graceful sea turtle! Thank you for creating memories that will stay with me forever..',
-        image: '/assets/testimonial-2.png',
+        image: '../../assets/testimonial-2.png',
         name: 'Helena Donovan',
         state: 'Denver - Colorado',
         rating: '4.8'
@@ -221,7 +221,7 @@ export const testimonials = [
     {
         id: 'testimonial-3',
         text: 'As a marine biology student, I had the privilege of joining a coral reef conservation workshop organized by KATADYSI. Not only did I gain valuable hands-on experience in coral restoration techniques, but I also witnessed the commitment of the team towards marine conservation. This experience reaffirmed my passion for marine life, and I am grateful for the opportunity to contribute to such an important cause.',
-        image: '/assets/testimonial-3.png',
+        image: '../../assets/testimonial-3.png',
         name: 'Sarah',
         state: 'Newark - New Jersey',
         rating: '4.8'
@@ -229,7 +229,7 @@ export const testimonials = [
     {
         id: 'testimonial-4',
         text: "I've always been fascinated by shipwrecks, and my dream came true with KATADYSI. The Shipwreck Exploration Weekend was a remarkable blend of adventure and history. The guides' knowledge and passion for maritime history were infectious, and the dives to the wrecks were a surreal experience. I'm grateful for the insights gained and the memories made during this unique and well-organized event.",
-        image: '/assets/testimonial-4.png',
+        image: '../../assets/testimonial-4.png',
         name: 'Alex McGill',
         state: 'Boston - Massachusetts',
         rating: '4.7'
@@ -237,7 +237,7 @@ export const testimonials = [
     {
         id: 'testimonial-1',
         text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis.',
-        image: '/assets/testimonial-1.png',
+        image: '../../assets/testimonial-1.png',
         name: 'Stephan Costa',
         state: 'Nashville - Tennessee',
         rating: '4.5'
@@ -245,7 +245,7 @@ export const testimonials = [
     {
         id: 'testimonial-2',
         text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis.',
-        image: '/assets/testimonial-2.png',
+        image: '../../assets/testimonial-2.png',
         name: 'Helena Donovan',
         state: 'Denver - Colorado',
         rating: '4.5'
@@ -255,19 +255,19 @@ export const testimonials = [
 export const services = [
     {
         id: 'services-class',
-        icon: '/assets/services-class.svg',
+        icon: '../../assets/services-class.svg',
         title: 'Diving courses',
         paragraph: "Dive into learning with our comprehensive range of dive courses. Whether you're a beginner seeking to earn your Open Water Diver certification or an experienced diver looking to advance your skills, we have the perfect course for you. Join us for a journey of discovery and self-improvement in the underwater realm.",
     },
     {
         id: 'services-equipment',
-        icon: '/assets/services-equipment.svg',
+        icon: '../../assets/services-equipment.svg',
         title: 'Diving equipment',
         paragraph: "Browse our handpicked selection of top-quality scuba diving equipment and gear. From masks and fins to regulators and dive computers, we only offer products we trust and use ourselves. Dive confidently with gear that enhances your safety and comfort underwater.",
     },
     {
         id: 'services-destinations',
-        icon: '/assets/services-compass.svg',
+        icon: '../../assets/services-compass.svg',
         title: 'Diving destinations',
         paragraph: "Explore the world's most stunning dive destinations with us. From tropical coral reefs teeming with colorful marine life to haunting shipwrecks full of history, our carefully curated list of destinations promises unforgettable underwater experiences.",
     }
@@ -289,28 +289,28 @@ export const missionContent = [
 export const teamMembers = [
     {
         id: 'team-ceo',
-        image: '/assets/team-1.png',
+        image: '../../assets/team-1.png',
         name: 'Brad Kewell',
         jobTitle: 'CEO',
         bio: 'Beneath the surface, an intricate ecosystem thrives, seemingly detached from the hustle and bustle of our everyday lives.',
     },
     {
         id: 'team-main_instructor',
-        image: '/assets/team-2.png',
+        image: '../../assets/team-2.png',
         name: 'Sienna Capri',
         jobTitle: 'Main Instructor',
         bio: 'Beneath the surface, an intricate ecosystem thrives, seemingly detached from the hustle and bustle of our everyday lives.',
     },
     {
         id: 'team-instructor-3',
-        image: '/assets/team-3.png',
+        image: '../../assets/team-3.png',
         name: 'Chris Hunt',
         jobTitle: 'Instructor',
         bio: 'Beneath the surface, an intricate ecosystem thrives, seemingly detached from the hustle and bustle of our everyday lives.',
     },
     {
         id: 'team-instructor-4',
-        image: '/assets/team-4.png',
+        image: '../../assets/team-4.png',
         name: 'Michael Cusso',
         jobTitle: 'Instructor',
         bio: 'Beneath the surface, an intricate ecosystem thrives, seemingly detached from the hustle and bustle of our everyday lives.',
