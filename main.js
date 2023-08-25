@@ -39,40 +39,23 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-gsap.fromTo('.hero__text',
-    {
-        scaleY: 0,
-    },
-    {
-        scaleY: 1,
-        duration: 1,
-        delay: .5
-    },
-)
-
-gsap.fromTo('.about__images',
-    {
-        scrollTrigger: {
-            trigger: '.about__images',
-            opacity: 0.2,
-            start: 'top top',
-            end: 'bottom bottom',
-            scrub: true,
-        }
-    },
-    {
-        duration: 1,
-        delay: .5,
-        opacity: 1
-        
-    }
-)
 animateSectionBg('.about', '#DEEBE7')
 animateSectionBg('.mission', '#F1F1E6')
 animateSectionBg('.testimonials', '#195D66')
 
+console.log(window.innerHeight)
+ScrollTrigger.create({
+    trigger: '.hero',
+    start: "top top",
+    end: "+=600",
+    pin: '.hero__bg',
+    scrub: true,
+})
 
-const lenis = new Lenis()
+const lenis = new Lenis({
+    duration: 1.2,
+    easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+})
 
 function raf(time) {
     lenis.raf(time)
